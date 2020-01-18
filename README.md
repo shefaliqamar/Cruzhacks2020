@@ -1,0 +1,1 @@
+Google doc for ideas:
