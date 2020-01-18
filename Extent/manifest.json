@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Find Bias",
+    "version": "1.0",
+    "description": "This extension helps with giving all prespective of a news",
+    "icons":{
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "browser_action": {
+        "default_icon": "icon16.png"
+
+    }
+}
