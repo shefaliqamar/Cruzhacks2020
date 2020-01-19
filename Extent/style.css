@@ -1,0 +1,39 @@
+#life{
+    padding-right: 0%;
+}
+
+#greet{
+    text-align: center;
+    color: orange;
+    height:auto;
+    width: 500px;
+    margin-bottom: 5%;
+}
+
+#don{
+    margin-left: .3%;
+    margin-right: auto;
+    height: 20px;
+    widows: 20px;
+}
+
+#ele{
+    margin-left: 86.7%;
+    margin-right: 0%;
+    padding-right: 0%;
+    height: 20px;
+    widows: 20px;
+}
+
+#rect{
+  height: 30px;
+  width: 99%;
+  margin-left: .3%;
+  background-image: linear-gradient(to right, blue , red); /* Standard syntax (must be last) */
+}
+
+#point{
+    margin-left: var(--element-position);/*this will be a variable*/
+    height: 25px;
+    widows: 25px;
+}
