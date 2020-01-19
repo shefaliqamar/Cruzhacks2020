@@ -1,7 +1,4 @@
-// console.log(window.innerHTML)
 
-// exports.x = "hello";
-// console.log(globalString);
 
 var margin =0.3;
 
@@ -14,8 +11,8 @@ chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT}
       if (currentURL.includes("fox")){
         margin=90;
         //alert(currentURL);
-    }else if (currentURL.includes("nytimes")){
-        marginl=10;
+    }else if (currentURL.includes("cnn")){
+        margin=9;
         //alert("left");
     }else  
         margin=0; 

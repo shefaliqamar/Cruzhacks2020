@@ -88,7 +88,7 @@ function doGet() {
 
 
   axios.post("https://cruzhacks2020-1579379258579.appspot.com/form-example", {
-    url: "www.youtube.com and i like puppies"
+    url: "https://www.cnn.com/2020/01/15/politics/us-china-trade-deal-phase-one-signed/index.html"
   })
   .then(function (response) {
     console.log(response.data);

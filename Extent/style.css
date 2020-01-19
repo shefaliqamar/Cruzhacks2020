@@ -1,6 +1,6 @@
 #life{
     padding-right: 0%;
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(216, 212, 212);
 }
 
 #greet{
@@ -34,7 +34,7 @@
 }
 
 #point{
-    margin-left: var(--element-position);/*this will be a variable*/
+    margin-left: var(--element-position);
     height: 25px;
     widows: 25px;
 }
