@@ -1,8 +1,11 @@
 // console.log(window.innerHTML)
 
+// exports.x = "hello";
+// console.log(globalString);
+
 var margin =0.3;
 
-var currentURL;
+var currentURL="";
 chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT},
    function(tabs){
        currentURL=tabs[0].url;
