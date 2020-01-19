@@ -1,35 +1,38 @@
 // console.log(window.innerHTML)
-document.documentElement.style.setProperty('--element-position', .5+ '%')
 
-/*var currentURL;
-chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-    currentURL = tabs[0].url;
-    alert();
-});*/
+var margin =0.3;
 
-/*function getCurrentURL(tab){
-    currentURL=tab;
-    alert(tab)
-}*/
-/*
-//document.getElementById("url").innerHTML = currentURL;
+var currentURL;
+chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT},
+   function(tabs){
+       currentURL=tabs[0].url;
+      //alert(currentURL);
+      
+      if (currentURL.includes("fox")){
+        margin=90;
+        //alert(currentURL);
+    }else if (currentURL.includes("nytimes")){
+        marginl=10;
+        //alert("left");
+    }else  
+        margin=0; 
+        //alert("center");
+    document.documentElement.style.setProperty('--element-position', margin+ '%')//change the 0.5 to the var margin
 
-const https = require('https');
+    const Http = new XMLHttpRequest();
+    const url= "cruzhacks2020-1579379258579.appspot.com";
+    Http.open("GET", url);
+    Http.send();
 
-https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
-  let data = '';
+    Http.onreadystatechange=function(){
+        if(this.readyState==4&&this.status==200){
+            console.log(Http.responseText)
+        }
+    }
 
-  // A chunk of data has been recieved.
-  resp.on('data', (chunk) => {
-    data += chunk;
-  });
+   }   
+);
 
-  // The whole response has been received. Print out the result.
-  resp.on('end', () => {
-    console.log(JSON.parse(data).explanation);
-  });
 
-}).on("error", (err) => {
-  console.log("Error: " + err.message);
-});
-*/
+    
+
